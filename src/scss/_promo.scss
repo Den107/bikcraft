@@ -1,0 +1,40 @@
+.promo {
+  background-color: black;
+  padding-top: clamp(3.75rem, 1.399rem + 11.75vw, 12.125rem);
+  padding-bottom: clamp(5rem, 4.298rem + 3.51vw, 7.5rem);
+}
+.promo__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: clamp(1.25rem, 0.636rem + 3.07vw, 3.438rem);
+  @media (max-width: 1390px) {
+    display: block;
+  }
+}
+
+.promo__content {
+  flex: 0 0 calc(50% - 10px);
+}
+
+.promo__text {
+  padding-top: clamp(0.938rem, 0.569rem + 1.84vw, 2.25rem);
+}
+
+.promo__button {
+  display: inline-block;
+  margin-top: 20px;
+}
+
+.promo__image {
+  flex: 0 0 640px;
+  position: relative;
+  img {
+    @media (max-width: 1390px) {
+      display: none;
+    }
+    position: absolute;
+    width: 100%;
+    top: -344px;
+  }
+}
