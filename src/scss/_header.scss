@@ -22,7 +22,7 @@
       width: 30px;
       height: 18px;
       position: relative;
-      z-index: 5;
+      z-index: 11;
       cursor: pointer;
       span {
         position: absolute;
@@ -64,6 +64,7 @@
   &__body {
     @media (max-width: $burgerBreakpoint) {
       position: absolute;
+      z-index: 10;
       top: 0;
       left: -100%; //поменять на right, чтобы меню выезжало справа, чтобы выезжало сверху добавить bottom:100% и left:0
       height: 100vh;
