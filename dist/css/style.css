@@ -543,3 +543,93 @@ body.lock {
     border-bottom: 2px solid #ededed;
   }
 }
+
+.quote {
+  margin-top: clamp(5rem, 4.298rem + 3.51vw, 7.5rem);
+  background-color: #ffbb00;
+}
+@media (max-width: 991.98px) {
+  .quote {
+    display: none;
+  }
+}
+.quote__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.quote__img img {
+  width: 100%;
+}
+.quote__content {
+  max-width: 511px;
+  padding-left: 40px;
+  transform: translate(-84%, 46%);
+  position: relative;
+}
+@media (max-width: 1870px) {
+  .quote__content {
+    transform: none;
+  }
+}
+.quote__design1 {
+  position: absolute;
+  top: -100%;
+  left: -21%;
+}
+@media (max-width: 1870px) {
+  .quote__design1 {
+    display: none;
+  }
+}
+.quote__text {
+  font-family: "Merriweather";
+  font-style: italic;
+  font-weight: 900;
+  font-size: clamp(1.25rem, 0.969rem + 1.4vw, 2.25rem);
+  line-height: 48px;
+  color: #332200;
+  position: relative;
+}
+.quote__text::before {
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 35px;
+  background: url("../img/quote1.png");
+  left: -40px;
+}
+@media (max-width: 991.98px) {
+  .quote__text::before {
+    display: none;
+  }
+}
+.quote__text::after {
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 35px;
+  background: url("../img/quote2.png");
+  bottom: 2px;
+}
+@media (max-width: 991.98px) {
+  .quote__text::after {
+    display: none;
+  }
+}
+.quote__author {
+  margin-top: 18px;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  color: #a66f00;
+}
+.quote__design2 {
+  position: absolute;
+  right: -70%;
+}
+@media (max-width: 1870px) {
+  .quote__design2 {
+    display: none;
+  }
+}

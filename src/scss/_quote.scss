@@ -1,0 +1,85 @@
+.quote {
+  @media (max-width: $breakpoint992) {
+    display: none;
+  }
+  margin-top: clamp(5rem, 4.298rem + 3.51vw, 7.5rem);
+  background-color: $orange;
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__img {
+    img {
+      width: 100%;
+    }
+  }
+
+  &__content {
+    @media (max-width: 1870px) {
+      transform: none;
+    }
+    max-width: 511px;
+    padding-left: 40px;
+    transform: translate(-84%, 46%);
+    position: relative;
+  }
+
+  &__design1 {
+    @media (max-width: 1870px) {
+      display: none;
+    }
+    position: absolute;
+    top: -100%;
+    left: -21%;
+  }
+
+  &__text {
+    font-family: "Merriweather";
+    font-style: italic;
+    font-weight: 900;
+    font-size: clamp(1.25rem, 0.969rem + 1.4vw, 2.25rem);
+    line-height: 48px;
+    color: $blackText;
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      width: 40px;
+      height: 35px;
+      background: url("../img/quote1.png");
+      left: -40px;
+      @media (max-width: $breakpoint992) {
+        display: none;
+      }
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      width: 40px;
+      height: 35px;
+      background: url("../img/quote2.png");
+      bottom: 2px;
+      @media (max-width: $breakpoint992) {
+        display: none;
+      }
+    }
+  }
+
+  &__author {
+    margin-top: 18px;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+    color: #a66f00;
+  }
+
+  &__design2 {
+    position: absolute;
+    right: -70%;
+    @media (max-width: 1870px) {
+      display: none;
+    }
+  }
+}
