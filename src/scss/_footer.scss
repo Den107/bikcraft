@@ -1,0 +1,119 @@
+.footer {
+  background-color: black;
+  padding: 60px 410px 32px 160px;
+  @media (max-width: 1500px) {
+    padding: 60px 30px;
+  }
+  @media (max-width: $breakpoint992) {
+    padding: 30px;
+  }
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 492px;
+    @media (max-width: $breakpoint992) {
+      flex-direction: column;
+      height: auto;
+      gap: 60px;
+    }
+  }
+
+  &__named {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  &__copy {
+    font-weight: 400;
+    font-size: clamp(0.75rem, 0.645rem + 0.53vw, 1.125rem);
+    line-height: clamp(1.125rem, 0.879rem + 1.23vw, 2rem);
+    letter-spacing: 0.015em;
+    color: #9c9c9c;
+    @media (max-width: $breakpoint992) {
+      margin-top: 60px;
+    }
+  }
+}
+
+.contacts {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  @media (max-width: $breakpoint992) {
+    align-items: center;
+  }
+
+  &__title {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: 0.015em;
+    text-transform: uppercase;
+    margin-bottom: 32px;
+    color: #ffffff;
+  }
+
+  &__content {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 32px;
+    letter-spacing: 0.015em;
+    text-transform: uppercase;
+    color: $grayText;
+  }
+
+  &__line {
+    width: 360px;
+    height: 2px;
+    background-color: $grayBlack;
+    margin-bottom: 15px;
+    margin-top: 15px;
+  }
+
+  &__links {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 32px;
+    a {
+      height: 32px;
+      width: 32px;
+      svg {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+}
+.info {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  &__title {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 32px;
+
+    letter-spacing: 0.015em;
+    text-transform: uppercase;
+
+    color: #ffffff;
+  }
+
+  &__list {
+    margin-top: 32px;
+  }
+
+  &__item {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 36px;
+    letter-spacing: 0.015em;
+    color: $grayText;
+  }
+}

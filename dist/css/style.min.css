@@ -737,3 +737,124 @@ body.lock {
 .item-safe__button--grey {
   background-color: #9c9c9c;
 }
+
+.footer {
+  background-color: black;
+  padding: 60px 410px 32px 160px;
+}
+@media (max-width: 1500px) {
+  .footer {
+    padding: 60px 30px;
+  }
+}
+@media (max-width: 991.98px) {
+  .footer {
+    padding: 30px;
+  }
+}
+.footer__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 492px;
+}
+@media (max-width: 991.98px) {
+  .footer__container {
+    flex-direction: column;
+    height: auto;
+    gap: 60px;
+  }
+}
+.footer__named {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.footer__copy {
+  font-weight: 400;
+  font-size: clamp(0.75rem, 0.645rem + 0.53vw, 1.125rem);
+  line-height: clamp(1.125rem, 0.879rem + 1.23vw, 2rem);
+  letter-spacing: 0.015em;
+  color: #9c9c9c;
+}
+@media (max-width: 991.98px) {
+  .footer__copy {
+    margin-top: 60px;
+  }
+}
+
+.contacts {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+@media (max-width: 991.98px) {
+  .contacts {
+    align-items: center;
+  }
+}
+.contacts__title {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: 0.015em;
+  text-transform: uppercase;
+  margin-bottom: 32px;
+  color: #ffffff;
+}
+.contacts__content {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 32px;
+  letter-spacing: 0.015em;
+  text-transform: uppercase;
+  color: #b3b3b3;
+}
+.contacts__line {
+  width: 360px;
+  height: 2px;
+  background-color: #121212;
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+.contacts__links {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 32px;
+}
+.contacts__links a {
+  height: 32px;
+  width: 32px;
+}
+.contacts__links a svg {
+  width: 100%;
+  height: 100%;
+}
+
+.info {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.info__title {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: 0.015em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.info__list {
+  margin-top: 32px;
+}
+.info__item {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 36px;
+  letter-spacing: 0.015em;
+  color: #b3b3b3;
+}
