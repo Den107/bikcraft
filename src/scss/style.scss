@@ -3,10 +3,17 @@
 //@import "fonts"; //разблокировать если есть внешние шрифты, использовать с функцией fonts
 @import "global";
 @import "header";
+
+//Index
+
 @import "promo";
 @import "choose";
 @import "tech";
 @import "partners";
 @import "quote";
 @import "safe";
+
+//Catalog
+@import "catalogPromo";
+
 @import "footer";

@@ -51,3 +51,10 @@ $grayBlack: #121212;
     color: $orange;
   }
 }
+
+@mixin pretitle {
+  font-weight: 500;
+  font-size: clamp(1rem, 0.86rem + 0.7vw, 1.5rem);
+  line-height: clamp(1rem, 0.877rem + 0.61vw, 1.438rem);
+  color: $grayText;
+}

@@ -36,6 +36,9 @@ body {
 .title {
   @include title;
 }
+.pretitle {
+  @include pretitle;
+}
 .button {
   @include orangeButton;
 }

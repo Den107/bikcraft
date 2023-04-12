@@ -145,6 +145,13 @@ body.lock {
   color: #ffbb00;
 }
 
+.pretitle {
+  font-weight: 500;
+  font-size: clamp(1rem, 0.86rem + 0.7vw, 1.5rem);
+  line-height: clamp(1rem, 0.877rem + 0.61vw, 1.438rem);
+  color: #b3b3b3;
+}
+
 .button {
   padding: 16px 32px;
   background-color: #ffbb00;
@@ -738,6 +745,10 @@ body.lock {
   background-color: #9c9c9c;
 }
 
+.catalog-promo {
+  background-color: #121212;
+  padding: 60px 0;
+}
 .footer {
   background-color: black;
   padding: 60px 410px 32px 160px;
