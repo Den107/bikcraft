@@ -1,0 +1,46 @@
+.insurance-advantages {
+  background-color: black;
+  padding: 120px 0;
+  position: relative;
+  svg {
+    position: absolute;
+    bottom: 40px;
+    left: 40px;
+  }
+
+  &__items {
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 40px;
+  }
+
+  &__item {
+    flex: 0 0 calc(33.3% - 40px);
+    @media (max-width: $breakpoint992) {
+      flex: 0 0 calc(50% - 40px);
+    }
+    @media (max-width: $breakpoint480) {
+      flex: 0 0 100%;
+    }
+  }
+}
+
+.advantage {
+  &__title {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+    color: #ffffff;
+    margin-top: 8px;
+  }
+
+  &__text {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+    color: #9c9c9c;
+    margin-top: 8px;
+  }
+}
