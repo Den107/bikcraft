@@ -1,10 +1,18 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
-</head>
+<!doctype html>
+<html lang="ru">
+@@include('html/head.html',{
+"title":"Bickraft | Страница товара"
+})
 <body>
-$END$
+@@include('html/header.html',{})
+
+<main>
+    @@include('html/itemMain.html',{})
+
+</main>
+
+@@include('html/footer.html',{})
+
+<script src="js/app.min.js"></script>
 </body>
 </html>
