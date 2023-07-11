@@ -3,16 +3,19 @@
 @@include('html/head.html',{
 "title":"Bickraft | Страница товара"
 })
+
 <body>
-@@include('html/header.html',{})
+    @@include('html/header.html',{})
 
-<main>
-    @@include('html/itemMain.html',{})
+    <main>
+        @@include('html/itemMain.html',{})
+        @@include('html/itemChoose.html',{})
 
-</main>
+    </main>
 
-@@include('html/footer.html',{})
+    @@include('html/footer.html',{})
 
-<script src="js/app.min.js"></script>
+    <script src="js/app.min.js"></script>
 </body>
+
 </html>
