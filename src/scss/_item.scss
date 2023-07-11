@@ -1,5 +1,5 @@
 .item-main {
-  background-color: #121212;
+  background-color: $grayBlack;
   padding: 60px 0;
 
   &__title {
@@ -60,7 +60,7 @@
 
   &__first-tags {
     display: inline-block;
-    color: #b3b3b3;
+    color: $grayText;
     vertical-align: middle;
     div {
       background-color: black;
@@ -111,7 +111,7 @@
       font-style: normal;
       font-weight: 400;
       line-height: 20px;
-      color: #b3b3b3;
+      color: $grayText;
     }
   }
 
@@ -145,7 +145,7 @@
     display: flex;
     justify-content: space-between;
     &:not(:last-child) {
-      border-bottom: 1px solid #121212;
+      border-bottom: 1px solid $grayBlack;
       margin-bottom: 5px;
       padding-bottom: 5px;
     }
@@ -157,7 +157,6 @@
 
   &__title {
     color: black;
-    text-transform: lowercase;
   }
 
   &__wrapper {
@@ -181,7 +180,7 @@
       font-style: normal;
       font-weight: 600;
       line-height: 40px;
-      color: #121212;
+      color: $grayBlack;
       position: relative;
       padding-left: 20px;
       &::before {
@@ -203,6 +202,55 @@
       margin-top: clamp(0.125rem, 0.02rem + 0.53vw, 0.5rem);
       color: #595959;
       padding-left: 20px;
+    }
+  }
+}
+
+.item-ins {
+  background-color: $grayBlack;
+  margin-top: clamp(3.125rem, -1.261rem + 21.93vw, 18.75rem);
+  padding: 60px 0;
+  height: 516px;
+  @media (max-width: 1340px) {
+    height: auto;
+  }
+  &__wrapper {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    @media (max-width: 1340px) {
+      display: block;
+    }
+  }
+
+  &__img {
+    position: relative;
+    flex: 0 0 50%;
+    @media (max-width: 1340px) {
+      display: none;
+    }
+    img {
+      position: absolute;
+      left: 0;
+      top: -274px;
+    }
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    p {
+      margin-top: 32px;
+    }
+    button {
+      margin-top: 20px;
+      max-width: 206px;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 24px;
+      text-transform: uppercase;
     }
   }
 }
