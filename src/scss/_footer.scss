@@ -72,6 +72,9 @@
     background-color: $grayBlack;
     margin-bottom: 15px;
     margin-top: 15px;
+    @media (max-width: 380px) {
+      width: 290px;
+    }
   }
 
   &__links {
