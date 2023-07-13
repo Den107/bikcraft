@@ -1460,6 +1460,119 @@ body.lock {
   }
 }
 
+.contacts-maps {
+  margin: 120px 0;
+}
+.contacts-maps__title {
+  color: black;
+}
+.contacts-maps__wrapper {
+  margin-top: 60px;
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+}
+@media (max-width: 1190px) {
+  .contacts-maps__wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.map {
+  background-color: #f7f7f7;
+  position: relative;
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.1);
+  max-width: 560px;
+}
+@media (max-width: 600px) {
+  .map {
+    width: 100%;
+  }
+}
+.map img {
+  width: 100%;
+}
+.map::before {
+  content: "";
+  position: absolute;
+  background-image: url("../img/local.png");
+  width: 20px;
+  height: 20px;
+  left: 0;
+  z-index: 100;
+  left: 153px;
+  top: 113px;
+}
+@media (max-width: 600px) {
+  .map::before {
+    display: none;
+  }
+}
+.map h4 {
+  position: relative;
+  padding-left: 60px;
+  font-size: clamp(1rem, 0.719rem + 1.4vw, 2rem);
+  font-style: normal;
+  font-weight: 600;
+  line-height: clamp(1.25rem, 0.899rem + 1.75vw, 2.5rem);
+  color: black;
+  margin-top: 32px;
+}
+.map h4::before {
+  content: "";
+  width: 12px;
+  height: 8px;
+  background-color: #ffbb00;
+  position: absolute;
+  left: 36px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.map__text {
+  margin-top: 33px;
+  display: flex;
+  gap: 60px;
+  justify-content: center;
+}
+.map__text p {
+  position: relative;
+  font-size: clamp(0.75rem, 0.68rem + 0.35vw, 1rem);
+  font-style: normal;
+  font-weight: 500;
+  line-height: clamp(0.75rem, 0.399rem + 1.75vw, 2rem);
+  color: #595959;
+  padding-left: 13px;
+}
+.map__text p::before {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 64px;
+  background-color: #ededed;
+  left: 0;
+}
+.map > p {
+  position: relative;
+  margin: 32px 0;
+  font-size: clamp(0.5rem, 0.36rem + 0.7vw, 1rem);
+  font-style: normal;
+  font-weight: 600;
+  line-height: clamp(0.625rem, 0.239rem + 1.93vw, 2rem);
+  color: black;
+  padding-left: 60px;
+}
+.map > p::before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  background-image: url("../img/horario.png");
+  position: absolute;
+  left: 36px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
 .footer {
   background-color: black;
   padding: 60px 410px 32px 160px;
